@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de login - Usuario</title>
+
+    <!-- style css-->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- javascript-->
+    <script src="./javascript/app.js" defer></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdn.es.gov.br/fonts/font-awesome/css/font-awesome.min.css">
+
+
+</head>
+<body>
+  <main id="container">
+    <form action="" id="formulario">  
+        <img src="./imagens/perfil.png" id="fotoProfile" alt="imagem de perfil boneco masculino cor de pele branca,cabelo marrom,camisa social e gravata,fundo laranja">
+       <h2 id="h2Login">Login:</h2>
+      <div id="dadosUsuario">
+        <div id="sobreUsuario" class="content">
+            <input type="text" id="usuario"  placeholder=" ">
+            <label class="labelList">Nome do usuário</label>
+        </div>
+        <div id="senhaUsuario" class="content">
+            <input type="password" id="senha" placeholder=" ">
+            <label class="labelList" for="senha">Senha</label><br>
+        </div>
+        <div id="div-btn">
+            <button class="btn-send">Enviar</button>
+        </div>
+        <div id="cadastro">
+          <p>Não é cadastrado? <span id="cliqueAqui">Clique aqui para cadastrar </span></p>
+        </div>
+      </div>
+    </form>
+
+    <div id="modal">
+        <form action="" id="formularioDados">
+          <div class="content">
+            <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder=" " required>
+            <label for="nomeCompleto" class="labelList">Nome </label>
+          </div>
+          <div class="content"> 
+            <input type="date" name="dataNascimento" id="dataNascimento" placeholder=""required>
+          </div>
+          <div class="content">
+            <input type="email" name="emailUsuario" id="emailUsuario" placeholder=" " required>
+            <label for="emailUsuario" class="labelList">E-mail </label>
+          </div>
+          <div class="content">
+            <input type="password" name="formularioSenha" id="formularioSenha" placeholder=" " required>
+            <label for="formularioSenha" class="labelList">Digite sua senha </label>
+          </div>
+          <div class="content">
+            <input type="password" name="confirmacaoSenha" id="confirmacaoSenha" placeholder=" " required>
+            <label for="confirmacaoSenha" class="labelList">Confirme a senha </label>
+          </div>
+          <div class="content">
+            <input type="text" name="cep" id="cep" placeholder=" " required>
+            <label for="cep" class="labelList">Cep </label>
+          </div>
+        <div class="content">
+            <input type="text" name="rua" id="rua"  placeholder=" " required>
+            <label for="rua" class="labelList">Rua</label>
+          </div>
+          <div class="content">
+            <input type="text" name="bairro" id="bairro" placeholder=" " required>
+            <label for="bairro" class="labelList"> Bairro </label>
+          </div>
+          <div class="content">
+            <input type="text" name="cidade" id="cidade" placeholder=" " required> 
+            <label for="cidade" class="labelList">Cidade</label>
+          </div>      
+        <div class="content">
+          <button type="button" class="btn-send" id="btnFormularioEnviar">Enviar</button> 
+       </div>
+      </form>
+      <div id="btnClose">
+        <button type="button" id="botaoFechar">
+          <ion-icon name="close-circle-outline"></ion-icon>
+        </button>
+      </div>        
+    </div>
+  </main>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
